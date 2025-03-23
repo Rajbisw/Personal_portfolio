@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#photo">Photo</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contract">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="parallax">
+        <div class="container">
+            <span id="element"></span>
+            <p>I am passionate about technology, I am learning Data Analytics, Web Devlopment and AI&ML.</p>
+        
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="animate-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <span id="element"></span>
+            <p id="about-description"> <h3>I am Raj Biswas, a third year Computer Science Engineering <br> from Poornima College of Engineering.</h3></p>
+        </div>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="photo" class="animate-section">
+        <div class="container">
+            <div class="photo-container">
+                <img src="photo.png" alt="Your Photo" id="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="animate-section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill" data-skill="HTML">HTML</div>
+                <div class="skill" data-skill="CSS">CSS</div>
+                <div class="skill" data-skill="JavaScript">JavaScript</div>
+                <div class="skill" data-skill="PYTHON">PYTHON</div>
+                <div class="skill" data-skill="DATA ANALYSIS">DATA ANALYSIS</div>
+                <div class="skill" data-skill="Git">Git</div>
+                <div class="skill" data-skill="AWS">AWS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="animate-section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Krishi Mitra</h3>
+                    <p>Welcome to Krishi Mitra, your go-to platform for contract farming solutions. </p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>To Do List</h3>
+                    <p>It is app which is used to record what to do and managing time.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="animate-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to discuss a project, feel free to reach out!</p>
+
+        <!-- Contact Form -->
+        <form id="contact-form" action="" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+            </div>
+
+            <button type="submit" class="cta">Submit</button>
+        </form>
+    </div>
+</section>
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Dynamic Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['<h1>Hello Everyone, <br> Welcome to My Portfolio Website.....</h1>'],
+      typeSpeed: 50,
+    });
+  </script>
+</html>
